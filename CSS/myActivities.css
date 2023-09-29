@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif Thai', serif;
+    
+}
+.navbar{
+    background-color: #333;
+    padding: 20px;
+}
+
+nav{
+   flex: 1;
+   text-align: left;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    background-color: #444443;
+    width: 100%;
+    height: 90vh;
+    
+}
+.col{
+    flex-basis: 50%;
+    
+}
+h1{
+    color: #fcfafa;
+    font-size: 90px;
+    text-shadow: 0 0 3px #5e5e5e;
+    margin-left: 5rem;
+    line-height: 1;
+
+}
+p{
+    color: #fdfbfb;
+    font-size: 11px;
+    line-height: 15px;
+    text-shadow: 0 0 5px #8f8e8e;
+    margin-left: 5rem;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(https://tuipied-my.sharepoint.com/personal/marisa_chant_dome_tu_ac_th/Documents/acti/or%20all.jpg);
+    
+}
+.card1 p{
+    color: #fff;
+    font-size: 11px;
+    margin-left: 0;
+}
+.card2{
+    background-image: url(https://tuipied-my.sharepoint.com/personal/marisa_chant_dome_tu_ac_th/Documents/acti/activity.jpg);
+}
+.card2 p{
+    color: #fff;
+    font-size: 11px;
+    margin-left: 0;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #fcfafa;
+}
+.card p{
+    text-shadow: 0 0 5px #060606;
+    font-size: 8px;
+}
+.border-bottom{
+    background-color: #fff;
+    padding: 30px;
+    
+}
