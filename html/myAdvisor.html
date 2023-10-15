@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Advisor</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My CSTU Passport</title>
     <link rel="stylesheet" href="../CSS/myAdvisor.css">
 
 </head>
 <body>
-    <div class="navbar">
-        <nav>
-            <ul>
-                
-                <li><a href="../index.html">Home</a></li>
-                
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">My CSTU</a></div>
+            <ul class="links">
+                <li><a href="html/html.html">My Website</a></li>
+                <li><a href="html/myAdvisor.html">My Advisor</a></li>
+                <li><a href="html/myActivities.html">Main Activities</a></li>
+                <li><a href="html/orientationDay.html">Orientation Day</a></li>
             </ul>
-        </nav>
-    </div>
-    <div class="team-section">
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    <h1>My Advisor</h1>
-                    <p>อาจาร์ยที่ปรึกษา</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="card">
-                    <div class="image-section">
-                        <img src="https://www.thaitimenews.com/uploads/contents/c_20200403213100_8534.jpg">
-                    </div>
-                    <div class="content">
-                        <h3>รองศาสตราจารย์ ดร. ณัฐธนนท์ หงส์วริทธิ์ธร</h3>
-                        <h4>คณบดี คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ (มธ.)</h4>
-                        <p>ตำแหน่งงานปัจจุบัน:<br>
--รักษาการแทนในตำแหน่งคณบดีคณะวิทยาศาสตร์และเทคโนโลยี<br>
-<br><br>     
-ผลงานที่ได้รับรางวัล:<br>
-- คว้า 3 รางวัลใหญ่ ได้แก่ รางวัล Grand Prize เป็นตัวแทนประเทศไทยเดินทางไปศึกษาดูงานต่างประเทศ รางวัลชนะเลิศ และรางวัล Popular Vote จากเวทีประกวด Food Innopolis Innovation Contest 2020<br> 
-- ในเวทีประกวดนวัตกรรมสิ่งประดิษฐ์ระดับนานาชาติ (SIIF 2019) ณ กรุงโซล ประเทศเกาหลีใต้ ได้สำเร็จ อีกทั้งได้รับการจดอนุสิทธิบัตร ตลอดจนมีความพร้อมผลิตและจัดจำหน่ายสู่เชิงพาณิชย์<br> 
-- คว้า 2 รางวัล ได้แก่ “รางวัลรองชนะเลิศอันดับ 1” และ “รางวัลนำเสนอยอดเยี่ยม” จากเวทีประกวด Food Innopolis Innovation Contest 2020 จังหวัดขอนแก่น ประเทศไทย (ปี 2557)<br>
-<br><br>
-</p>
-                    </div>
-                </div>
+            <a href="../index.html" class="action_btn">Home</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-    </div>
+
+        <div class="dropdown_menu">
+            <li><a href="html/html.html">My Website</a></li>
+                <li><a href="html/myAdvisor.html">My Advisor</a></li>
+                <li><a href="html/myActivities.html">Main Activities</a></li>
+                <li><a href="html/orientationDay.html">Orientation Day</a></li>
+                <li><a href="../index.html" class="action_btn">Home</a></li>
+        </div>
+    </header>
+
+
+        <div class="hero">
+            <h1>อาจาร์ยที่ปรึกษา</h1>
+            <h2>รองศาสตราจารย์ <span>ดร.</span> ณัฐธนนท์ หงส์วริทธิ์ธร</h2>
+                        <h3>คณบดี คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ (มธ.)</h3>
+                        <p>ตำแหน่งงานปัจจุบัน<br>
+        -รักษาการแทนในตำแหน่งคณบดีคณะวิทยาศาสตร์และเทคโนโลยี<br>
+        <br><br>     
+        ผลงานที่ได้รับรางวัล<br>
+        - คว้า 3 รางวัลใหญ่ ได้แก่ รางวัล Grand Prize เป็นตัวแทนประเทศไทยเดินทางไปศึกษาดูงานต่างประเทศ </p>รางวัลชนะเลิศ และรางวัล Popular Vote จากเวทีประกวด Food Innopolis Innovation Contest 2020<br> 
+        - ในเวทีประกวดนวัตกรรมสิ่งประดิษฐ์ระดับนานาชาติ (SIIF 2019) ณ กรุงโซล ประเทศเกาหลีใต้ได้สำเร็จ </p>อีกทั้งได้รับการจดอนุสิทธิบัตร ตลอดจนมีความพร้อมผลิตและจัดจำหน่ายสู่เชิงพาณิชย์<br> 
+        - คว้า 2 รางวัล ได้แก่ “รางวัลรองชนะเลิศอันดับ 1” และ “รางวัลนำเสนอยอดเยี่ยม” </p>จากเวทีประกวด Food Innopolis Innovation Contest 2020 จังหวัดขอนแก่น ประเทศไทย (ปี 2557)<br>
+        <br><br>
+        </p>
+        </div>
+
+        <div class="img-box">
+            <img src="d:\HTML\index\pattern.png" class="back-img">
+            <img src="d:\HTML\index\ผศ.ดร.ณัฐธนนท์-หงส์วริทธิ์ธร-คณบดี-คณะวิทยาศาสตร์ฯ-มธ.png" class="main-img">
+        </div>
+
+        <div class="social-links">
+        <a href="https://www.thairath.co.th/money/economics/thailand_econ/1811579"><i class="fa-solid fa-flask"></i></a>
+        </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+
+        }
+    </script>
 </body>
 </html>
+
