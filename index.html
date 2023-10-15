@@ -2,72 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My CSTU Passport</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="CSS/index.css">
-
- </head>
- <body>
-
-    <nav>
-         <div class="container"> 
-          <div class="nav-con">
-          <div class="logo">
-            <a>My CSTU</a>
-          </div>
-          <ul class="menu">
-            <li><a href="html/myAdvisor.html">My advisor</a></li>
-            <li><a href="html/myActivities.html">Main activities</a></li>
-            <li><a href="html/orientationDay.html">Orientation day</a></li>
-          </ul>
-          </div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="container">
-           <div class="hero-con">
-                <div class="hero-info">
-                   <h3>This is My webpage</h3>
-                    <p>สวัสดีครับอาจารย์และพี่ๆเพื่อนๆทุกคน นี่คือเว็บเพจสำหรับแนะนำกิจกรรมและงานต่างๆของผมครับ</p>
-                    <a href="html/html.html" class="hero-btn">More About Me</a>
-                </div>
-
-                <div class="hero-img">
-                    <img src="https://i.chzbgr.com/full/6390052096/hCE80AA7F/hello" alt="">
-
-                </div>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">My CSTU</a></div>
+            <ul class="links">
+                <li><a href="html/html.html">Home</a></li>
+                <li><a href="html/myAdvisor.html">My advisor</a></li>
+                <li><a href="html/myActivities.html">Main activities</a></li>
+                <li><a href="html/orientationDay.html">Orientation day</a></li>
+            </ul>
+            <a href="#" class="action_btn">Other Content</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-    </section> 
 
-    <section class="blog">
-       <div class="container">
-           <div class="blog-title">
-           <h2>MY LIFE</h2>
-           </div>
+        <div class="dropdown_menu">
+            <li><a href="html/html.html">Home</a></li>
+                <li><a href="html/myAdvisor.html">My advisor</a></li>
+                <li><a href="html/myActivities.html">Main activities</a></li>
+                <li><a href="html/orientationDay.html">Orientation day</a></li>
+                <li><a href="#" class="action_btn">Other Content</a></li>
+        </div>
+    </header>
 
-       <div class="blog-con">
-           <div class="blog-item">
-               <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg?t=1695767057" alt="">
-               <h4>TEAM FORTRESS 2</h4>
-               <p>นี่เป็นเกมที่ผมชอบเล่นมากตอนเด็กครับ</p>
-               
-           </div>
-           <div class="blog-item">
-               <img src="https://www.heavenofhorror.dk/wp-content/uploads/2022/05/Love-Death-Robots-saeson-3-Netflix.jpg" alt="">
-               <h4>SERIES</h4>
-               <p>เป็นซีรี่ส์ที่ผมแนะนำให้ไปหาดูมากครับ</p>
-               
-           </div>
-           <div class="blog-item">
-               <img src="https://image.bestreview.asia/wp-content/uploads/2022/02/best-Korean-Pickled-Salmon-11.png" alt="">
-               <h4>EATING</h4>
-               <p>แซลม่อนดองเป็นอาหารที่ผมชอบมากกกกครับ</p>
-               
-           </div>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>
+                Phurit
+            </p>
+        </section>
+    </main>
 
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-   </body>
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+
+        }
+    </script>
+</body>
 </html>
