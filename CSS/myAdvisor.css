@@ -5,10 +5,22 @@
     font-family: 'Open sans',sans-serif;
 }
 
-body{
-    height: 100vh;
-    background: #edf2fc;
-    background-position: center;
+:root{
+    --background-color: #edf2fc;
+    --text-color: #606163;
+    --title-color: #000;
+}
+
+.dark-theme {
+    --background-color: #000;
+    --text-color: #fff;
+    --title-color: #fff;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.8s, color 0.8s;
 }
 
 li{
@@ -17,13 +29,14 @@ li{
 
 a{
     text-decoration: none;
-    color: #606163;
+    color: var(--text-color);
     font-size: 1rem;
 }
 
 a:hover{
     color: orange;
 }
+
 /* HEADER */
 header{
     position: relative;
@@ -41,6 +54,7 @@ header{
 }
 
 .navbar .logo a{
+    color: var(--text-color); 
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -51,32 +65,27 @@ header{
 }
 
 .navbar .toggle_btn{
-    color: #606163;
+    color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
-.action_btn{
-    background-color: orange;
-    color: #606163;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
+.toggle-btn{
+    background: var(--text-color);
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
     border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
 }
 
-.action_btn:hover{
-    scale: 1.05;
-    color: #fff;
-}
-
-.action_btn:active{
-    scale: 0.95;
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
 }
 
 /* MENU */
@@ -116,7 +125,7 @@ header{
     margin-left: 8%;
     margin-top: 15%;
     flex-direction: column;
-    color: #606163;
+    color: var(--text-color); 
 }
 
 .hero h1{
@@ -159,10 +168,10 @@ span{
 }
 
 .info {
-    background-color: #212121;
+    background-color: var(--title-color); 
     padding: 0.75rem 2rem;
     text-decoration: none;
-    color: #fff;
+    color: var(--background-color); 
     display: inline-block;
     margin: 1rem 0;
     border-radius: 1.5rem;
@@ -180,7 +189,7 @@ span{
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn,.toggle-btn{
         display: none;
     }
 
