@@ -8,7 +8,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My CSTU Passport</title>
-    <link rel="stylesheet" href="Main Activities.css">
+    <link rel="stylesheet" href="../CSS/Main activities.css">
 
 </head>
 <body>
@@ -16,8 +16,8 @@
         <div class="navbar">
             <div class="logo"><a href="#">My CSTU</a></div>
             <ul class="links">
-                <li><a href="html/html.html">My Website</a></li>
-                <li><a href="html/myActivities.html">My Advisor</a></li>
+                <li><a href="../html/html.html">My Website</a></li>
+                <li><a href="../html/myAdvisor.html">My Advisor</a></li>
             </ul>
             <a href="../index.html" class="action_btn">Home</a>
             <div class="toggle_btn">
@@ -26,10 +26,78 @@
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="html/html.html">My Website</a></li>
-                <li><a href="html/myActivities.html">My Advisor</a></li>
+            <li><a href="../html/html.html">My Website</a></li>
+                <li><a href="../html/myAdvisor.html">My Advisor</a></li>
                 <li><a href="../index.html" class="action_btn">Home</a></li>
         </div>
     </header>
+
+
+    <div class="row">
+        <div class="col">
+        <h1>กิจกรรมหลัก</h1>
+        <p>มาดูกิจกรรมทั้งหมดที่ผมทำที่มหาวิทยาลัยธรรมศาสตร์กันดีกว่า</p>
+        </div>
+    </div>
+
+        </div>
+            <div class="card">
+                <div class="face front">
+                <img src="https://blog.cofact.org/wp-content/uploads/2023/08/tu4-974x650.jpg">
+                </div>
+                <div class="face back">
+                    <h2>SHOW</h2>
+                    <p>งานปฐมนิเทศที่มาพร้อมการแสดงมากมายที่น่าประทับใจและแสงสีเสียงแบบจัดเต็ม</p>
+    
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                <img src="https://image.springnews.co.th/uploads/images/md/2023/08/QL6VZlSa7KPq88gZ3X5b.webp">
+                </div>
+                <div class="face back">
+                    <h2>FAVORITE PART</h2>
+                    <p>ได้เห็นตัวแทนนายกในอนาคตของประเทศด้วยครับผม</p>
+    
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                <img src="../image/wallpapersden.com_forest-mountain-artistic_3840x2160.jpg">
+                </div>
+                <div class="face back">
+                    <h2>Other</h2>
+                    <p>กิจกรรมอื่นๆจะตามมาในอนาคตครับ</p>
+    
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                <img src="../image/wallpapersden.com_forest-mountain-artistic_3840x2160.jpg">
+                </div>
+                <div class="face back">
+                    <h2>Other</h2>
+                    <p>กิจกรรมอื่นๆจะตามมาในอนาคตครับ</p>
+    
+                </div>
+            </div>
+
+    
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
+
+        }
+    </script>
 </body>
 </html>
