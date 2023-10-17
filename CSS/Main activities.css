@@ -60,7 +60,7 @@ header{
 
 .action_btn{
     background-color: orange;
-    color: #fff;
+    color: #606163;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -88,7 +88,7 @@ header{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255,0.1);
+    background: rgba(32, 32, 32, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -96,7 +96,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 140px;
 }
 
 .dropdown_menu li{
@@ -112,20 +112,120 @@ header{
     justify-content: center;
 }
 
-/* HERO */
-section#hero{
-    height: calc(100vh - 60px);
-    display: flex;
+/* ROW */
+.row{
+    margin-left: 8%;
+    margin-top: 15%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: #fff;
 }
 
-#hero h1{
-    font-size: 3rem;
+.col{
+    flex-basis: 50%;
+}
+
+.col h1{
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+/* CARD */
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .face{
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card .front h2 {
+    width: 200px;
+    height: 230px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0, 0, 4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    color: #040404;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back h2{
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    font-size: 13px;
+    letter-spacing:  1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color: #606163;
+    margin-right: 20px;
+}
+
+.social-links a:hover{
+    color: orange;
 }
 
 /* RESPONSIVE DESIGN */
@@ -149,4 +249,10 @@ section#hero{
     left: 2rem;
     width: unset;
    }
+}
+
+@media(max-width: 1660px){
+    .img-box {
+        display: none;
+    }
 }
