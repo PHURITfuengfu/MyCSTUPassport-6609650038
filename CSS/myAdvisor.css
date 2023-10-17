@@ -95,7 +95,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 140px;
+    height: 180px;
 }
 
 .dropdown_menu li{
@@ -133,6 +133,7 @@ span{
 }
 
 .img-box{
+    object-fit: cover;
     width: 45%;
     height: 80%;
     position: absolute;
@@ -157,19 +158,23 @@ span{
     left: 54%;
 }
 
-.social-links{
-    margin-left: 8%;
-    margin-top: 100px;
+.info {
+    background-color: #212121;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
 }
 
-.social-links a{
-    font-size: 30px;
-    color: #606163;
-    margin-right: 20px;
+.info:hover,.info:focus {
+    background-color: #000;
+    outline: none;
 }
 
-.social-links a:hover{
-    color: orange;
+.info:active {
+    background-color: #606163;
 }
 
 /* RESPONSIVE DESIGN */
