@@ -15,13 +15,13 @@ body {
 }
 
 :root{
-    --background-image: url('file:///D:/HTML/index/01-1.jpg');
+    --background-image: url('../image/day tu.jpg');
     --text-color: #606163;
     --title-color: #000;
 }
 
 .dark-theme {
-    --background-image: url('file:///D:/HTML/index/night%20tu.jpg');
+    --background-image: url('../image/night tu.jpg');
     --text-color: #fff;
     --title-color: #fff;
 }
