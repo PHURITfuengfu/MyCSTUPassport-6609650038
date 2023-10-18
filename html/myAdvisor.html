@@ -33,10 +33,7 @@
             <li><a href="../index.html">Home</a></li>
                 <li><a href="../html/html.html">My Website</a></li>
                 <li><a href="../html/Main activities.html">Main Activities</a></li>
-                <div class="toggle-btn" id="btn">
-                <h4 id="btnText">Dark</h4>
-                <img src="../image/moon.png" id="btnIcon">
-            </div>
+                <button class="toggle-btn-v2" id="dark"><h4 id="darkText">Dark</h4><img src="../image/moon.png" id="darkIcon"></button>
         </div>
     </header>
 
@@ -81,6 +78,25 @@
         }
 
         </script>
+<script>
+
+    let dark =document.getElementById("dark");
+    let darkText =document.getElementById("darkText");
+    let darkIcon =document.getElementById("darkIcon");
+
+    dark.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+
+        if(document.body.classList.contains("dark-theme")){
+            darkIcon.src = "../image/sun.png";
+            darkText.innerHTML = "Light";
+    }else{
+            darkIcon.src = "../image/moon.png";
+            darkText.innerHTML = "Dark";
+    }
+}
+
+</script>
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
