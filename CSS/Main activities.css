@@ -5,11 +5,25 @@
     font-family: 'Open sans',sans-serif;
 }
 
-body{
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://arsomsilparchitect.co.th/wp-content/uploads/2020/10/01-1.jpg');
+body {
+    background: var(--background-image);
+    transition: background 0.8s, color 0.8s;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+:root{
+    --background-image: url('file:///D:/HTML/index/01-1.jpg');
+    --text-color: #606163;
+    --title-color: #000;
+}
+
+.dark-theme {
+    --background-image: url('file:///D:/HTML/index/night%20tu.jpg');
+    --text-color: #fff;
+    --title-color: #fff;
 }
 
 li{
@@ -80,6 +94,43 @@ header{
     scale: 0.95;
 }
 
+.toggle-btn{
+    background: #606163;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn-v2{
+    background: #606163;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.toggle-btn-v2 img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+
 /* MENU */
 .dropdown_menu{
     display: none;
@@ -96,7 +147,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 140px;
+    height: 180px;
 }
 
 .dropdown_menu li{
@@ -225,7 +276,7 @@ header{
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn,.toggle-btn{
         display: none;
     }
 
@@ -246,7 +297,7 @@ header{
 }
 
 @media(max-width: 1660px){
-    .img-box {
+    .img-box{
         display: none;
     }
 }
