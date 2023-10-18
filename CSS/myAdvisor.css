@@ -97,6 +97,11 @@ header{
     margin-top: 10px;
 }
 
+.toggle-btn-v2 img{
+    width: 25px;
+    margin-left: 10px;
+}
+
 .toggle-btn img{
     width: 25px;
     margin-left: 10px;
