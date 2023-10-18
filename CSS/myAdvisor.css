@@ -83,6 +83,20 @@ header{
     cursor: pointer;
 }
 
+.toggle-btn-v2{
+    background: #606163;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
 .toggle-btn img{
     width: 25px;
     margin-left: 10px;
@@ -210,7 +224,7 @@ span{
 }
 
 @media(max-width: 1660px){
-    .img-box {
+    .img-box{
         display: none;
     }
 }
