@@ -72,8 +72,8 @@ header{
 }
 
 .toggle-btn{
-    background: var(--text-color);
-    color: var(--background-color);
+    background: #606163;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
