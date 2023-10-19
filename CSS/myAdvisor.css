@@ -9,12 +9,14 @@
     --background-color: #edf2fc;
     --text-color: #606163;
     --title-color: #000;
+    --arrow: url('../image/arrow.png');
 }
 
 .dark-theme {
     --background-color: #000;
     --text-color: #fff;
     --title-color: #fff;
+    --arrow: url('../image/arrow dark.png');
 }
 
 body {
