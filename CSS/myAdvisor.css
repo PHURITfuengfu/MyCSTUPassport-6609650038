@@ -16,7 +16,7 @@
     --background-color: #000;
     --text-color: #fff;
     --title-color: #fff;
-    --arrow: url('../image/arrow dark.png');
+    --arrow-color: url('../image/arrow dark.png');
 }
 
 body {
@@ -202,12 +202,13 @@ span{
 
 .info img{
     width: 30px;
-    display: none;
+    display: none
+    background-color: var('--arrow-color');
 }
 
 .info:hover img{
     display: block;
-    color: var(--background-color);
+
 }
 
 .info:hover{
