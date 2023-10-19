@@ -201,11 +201,11 @@ span{
 .info img{
     width: 30px;
     display: none;
-    color: var(--background-color);
 }
 
 .info:hover img{
     display: block;
+    color: var(--background-color);
 }
 
 .info:hover{
