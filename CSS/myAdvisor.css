@@ -203,7 +203,7 @@ span{
 .info img{
     width: 30px;
     display: none
-    background-color: var('--arrow-color');
+    background-color: var(--arrow-color);
 }
 
 .info:hover img{
