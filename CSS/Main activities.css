@@ -296,9 +296,3 @@ header{
     width: unset;
    }
 }
-
-@media(max-width: 1660px){
-    .img-box{
-        display: none;
-    }
-}
