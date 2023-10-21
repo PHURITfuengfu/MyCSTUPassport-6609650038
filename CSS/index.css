@@ -183,17 +183,16 @@ header{
     margin: 25px 0px;
 }
 
-.hero .icon-box i{
+.hero .icon-box a{
     border-radius: 50%;
-    border: 2px solid white;
     padding: 6px;
     font-size: 25px;
     cursor: pointer;
     transition: .2s;
 }
 
-.hero .icon-box i:hover{
-    background-color: white;
+.hero .icon-box a:hover{
+    color: orange;
 }
 
 /* IMG */
