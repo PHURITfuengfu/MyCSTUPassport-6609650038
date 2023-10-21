@@ -164,19 +164,56 @@ header{
 }
 
 /* HERO */
-section#hero{
-    height: calc(100vh - 60px);
-    display: flex;
+.hero{
+    margin-left: 8%;
+    margin-top: 15%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
+    color: white; 
 }
 
-#hero h1{
-    font-size: 3rem;
+.hero h1{
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.hero .icon-box{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+
+.hero .icon-box i{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.hero .icon-box i:hover{
+    background-color: white;
+}
+
+/* IMG */
+.img-box {
+    object-fit: cover;
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+}
+
+.img-box img{
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px white;
+    background-color: orange;
+    width: 400px;
+    height: 400px;
+    position: absolute;
 }
 
 /* RESPONSIVE DESIGN */
